@@ -3,7 +3,7 @@
 بعد از اینکه Workflow شماره 01 را اجرا کردی، فایل زیر در GitHub ساخته می‌شود:
 
 ```text
-https://raw.githubusercontent.com/<OWNER>/<REPO>/main/outputs/pdp_normalized_latest.json
+https://raw.githubusercontent.com/PARS2026/pdp-tender-ai-system/main/outputs/pdp_normalized_latest.json
 ```
 
 یک Google Doc بساز یا از فایل تست موفق استفاده کن و آن را خروجی تحلیل قرار بده. سپس Scheduled Task را با متن زیر بساز یا دستی اجرا کن.
@@ -19,10 +19,10 @@ https://raw.githubusercontent.com/<OWNER>/<REPO>/main/outputs/pdp_normalized_lat
 فایل نرمال‌شده مناقصات و استعلامات را از GitHub بخوان، موارد مناسب PDP را تحلیل کن، و خروجی نهایی را به صورت JSON معتبر داخل Google Doc خروجی جایگزین کن.
 
 ورودی GitHub:
-https://raw.githubusercontent.com/<OWNER>/<REPO>/main/outputs/pdp_normalized_latest.json
+https://raw.githubusercontent.com/PARS2026/pdp-tender-ai-system/main/outputs/pdp_normalized_latest.json
 
 Google Doc خروجی برای نوشتن JSON:
-https://docs.google.com/document/d/<GOOGLE_DOC_ID>/edit
+https://docs.google.com/document/d/1vudHQ7Rbgoxk71ZZ7neDorCvcgtOeQY_C1ayY5xL7bI/edit?usp=sharing/edit
 
 قواعد انتخاب:
 - موارد مرتبط با خدمات مهندسین مشاور، طراحی، مطالعات، ماده 23، امکان‌سنجی، شهرسازی، ساختمان، سازه، تأسیسات، انرژی، GIS، نظارت، مدیریت طرح و مناطق ویژه را پیشنهاد بده.
@@ -37,8 +37,8 @@ https://docs.google.com/document/d/<GOOGLE_DOC_ID>/edit
   "generated_at": "...",
   "analysis_method": "ChatGPT Scheduled Task",
   "source": {
-    "github_owner": "<OWNER>",
-    "github_repo": "<REPO>",
+    "github_owner": "PARS2026",
+    "github_repo": "pdp-tender-ai-system",
     "file": "outputs/pdp_normalized_latest.json"
   },
   "suggested_tenders": [],
