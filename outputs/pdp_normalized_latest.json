@@ -1,0 +1,66 @@
+{
+  "schema_version": "pdp-normalized-test-v1",
+  "generated_at": "2026-07-09T18:10:23.283484+00:00",
+  "mode": "lightweight_prototype_sample_extract",
+  "from_date": "1405-04-18",
+  "to_date": "1405-04-18",
+  "item_count": 3,
+  "items": [
+    {
+      "id": "sample-tender-001",
+      "notice_type": "tender",
+      "title": "انتخاب مشاور برای مطالعات ماده 23 و طراحی ساختمان اداری",
+      "employer": "اداره کل نمونه",
+      "source": "sample_hezareh_tenders",
+      "source_label": "نمونه هزاره - مناقصات",
+      "source_url": "https://example.com/tender/sample-001",
+      "all_links": [
+        "https://example.com/tender/sample-001"
+      ],
+      "province": "تهران",
+      "publish_date": "1405-04-18",
+      "deadline_date": "1405-04-18",
+      "description": "خدمات مشاوره شامل مطالعات پایه، ماده 23، طراحی معماری، سازه و تأسیسات ساختمان اداری.",
+      "raw_text": "انتخاب مشاور برای مطالعات ماده 23 و طراحی ساختمان اداری - خدمات مهندسین مشاور"
+    },
+    {
+      "id": "sample-inquiry-001",
+      "notice_type": "inquiry",
+      "title": "استعلام خدمات نظارت عالیه و کارگاهی پروژه عمرانی",
+      "employer": "شهرداری نمونه",
+      "source": "sample_parsnamad_inquiries",
+      "source_label": "نمونه پارس نماد - استعلامات",
+      "source_url": "https://example.com/inquiry/sample-001",
+      "all_links": [
+        "https://example.com/inquiry/sample-001"
+      ],
+      "province": "کرمان",
+      "publish_date": "1405-04-18",
+      "deadline_date": "1405-04-18",
+      "description": "استعلام خدمات مهندسین مشاور برای نظارت عالیه و کارگاهی پروژه عمرانی شهری.",
+      "raw_text": "استعلام خدمات نظارت عالیه و کارگاهی پروژه عمرانی شهری"
+    },
+    {
+      "id": "sample-reject-001",
+      "notice_type": "tender",
+      "title": "خرید لوازم مصرفی و تجهیزات اداری",
+      "employer": "شرکت نمونه",
+      "source": "sample_hezareh_tenders",
+      "source_label": "نمونه هزاره - مناقصات",
+      "source_url": "https://example.com/tender/sample-002",
+      "all_links": [
+        "https://example.com/tender/sample-002"
+      ],
+      "province": "تهران",
+      "publish_date": "1405-04-18",
+      "deadline_date": "1405-04-18",
+      "description": "خرید کالا و لوازم مصرفی بدون خدمات مشاوره، طراحی یا نظارت.",
+      "raw_text": "خرید لوازم مصرفی و تجهیزات اداری"
+    }
+  ],
+  "instructions_for_scheduled": {
+    "purpose": "ChatGPT Scheduled should read this file, analyze PDP relevance, and write valid analysis JSON to Google Drive.",
+    "do_not_use_openai_api": true,
+    "do_not_use_apps_script": true
+  }
+}
