@@ -1,0 +1,75 @@
+{
+  "schema_version": "pdp-scheduled-analysis-v1",
+  "generated_at": "2026-07-09T20:45:00+03:30",
+  "analysis_method": "ChatGPT Scheduled Task - sample output",
+  "source": {
+    "github_owner": "PARS2026",
+    "github_repo": "pdp-tender-ai-system",
+    "file": "outputs/pdp_normalized_latest.json"
+  },
+  "suggested_tenders": [
+    {
+      "id": "sample-tender-001",
+      "title": "انتخاب مشاور برای مطالعات ماده 23 و طراحی ساختمان اداری",
+      "employer": "اداره کل نمونه",
+      "source": "نمونه هزاره - مناقصات",
+      "source_url": "https://example.com/tender/sample-001",
+      "deadline_date": "1405-04-19",
+      "category": "مطالعات ماده 23 / طراحی ساختمان",
+      "importance": "بالا",
+      "urgency": "فوری",
+      "score": 92,
+      "fit_for_pdp": "strong",
+      "reason": "موضوع شامل خدمات مهندسین مشاور، مطالعات ماده 23، طراحی معماری، سازه و تأسیسات است و با سوابق PDP همخوانی مستقیم دارد.",
+      "recommended_action": "بررسی اسناد و آماده‌سازی تصمیم برای شرکت در مناقصه.",
+      "matched_pdp_experience": "ساختمان‌های اداری، مطالعات ماده 23، طراحی معماری و تأسیسات.",
+      "risk_notes": "نیاز به کنترل دقیق مهلت و شرایط احراز صلاحیت.",
+      "confidence": "high"
+    }
+  ],
+  "suggested_inquiries": [
+    {
+      "id": "sample-inquiry-001",
+      "title": "استعلام خدمات نظارت عالیه و کارگاهی پروژه عمرانی",
+      "employer": "شهرداری نمونه",
+      "source": "نمونه پارس نماد - استعلامات",
+      "source_url": "https://example.com/inquiry/sample-001",
+      "deadline_date": "1405-04-19",
+      "category": "نظارت عالیه و کارگاهی / پروژه عمرانی شهری",
+      "importance": "متوسط",
+      "urgency": "فوری",
+      "score": 78,
+      "fit_for_pdp": "medium",
+      "reason": "خدمات نظارت مهندسین مشاور با حوزه کاری شرکت مرتبط است.",
+      "recommended_action": "کنترل ظرفیت تیم نظارت و شرایط مالی استعلام.",
+      "matched_pdp_experience": "نظارت و خدمات مهندسین مشاور در پروژه‌های ساختمانی و شهری.",
+      "risk_notes": "جزئیات شرح خدمات باید بررسی شود تا صرفاً اجرای پیمانکاری نباشد.",
+      "confidence": "medium"
+    }
+  ],
+  "rejected_items": [
+    {
+      "id": "sample-reject-001",
+      "title": "خرید لوازم مصرفی و تجهیزات اداری",
+      "reason": "خرید کالا و تجهیزات اداری است و خدمات مشاوره، طراحی، مطالعات یا نظارت ندارد."
+    }
+  ],
+  "dashboard": {
+    "total_input_items": 3,
+    "suggested_tenders_count": 1,
+    "suggested_inquiries_count": 1,
+    "urgent_count": 2,
+    "by_category": {
+      "مطالعات ماده 23 / طراحی ساختمان": 1,
+      "نظارت عالیه و کارگاهی / پروژه عمرانی شهری": 1
+    },
+    "by_source": {
+      "نمونه هزاره - مناقصات": 1,
+      "نمونه پارس نماد - استعلامات": 1
+    }
+  },
+  "notes": [
+    "این یک خروجی نمونه برای تست مسیر GitHub Pages است.",
+    "در نسخه واقعی این فایل را ChatGPT Scheduled در Google Drive می‌نویسد."
+  ]
+}
