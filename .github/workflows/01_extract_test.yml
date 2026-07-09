@@ -1,0 +1,50 @@
+name: 01 - PDP Extract Test
+
+on:
+  workflow_dispatch:
+    inputs:
+      from_date:
+        description: 'Jalali from date, example 1405-04-18'
+        required: true
+        default: '1405-04-18'
+      to_date:
+        description: 'Jalali to date, example 1405-04-19'
+        required: true
+        default: '1405-04-19'
+  schedule:
+    # Prototype daily extraction at 07:30 Tehran time during daylight-independent UTC offset +03:30.
+    # Adjust later for final scheduling.
+    - cron: '0 4 * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Generate lightweight normalized output
+        run: |
+          python scripts/extract_test.py \
+            --from-date "${{ github.event.inputs.from_date || '1405-04-18' }}" \
+            --to-date "${{ github.event.inputs.to_date || '1405-04-19' }}" \
+            --out-dir outputs
+
+      - name: Show output summary
+        run: |
+          ls -la outputs
+          python -m json.tool outputs/pdp_summary_latest.json
+
+      - name: Commit outputs
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'Update PDP prototype extracted outputs'
+          file_pattern: 'outputs/*.json'
