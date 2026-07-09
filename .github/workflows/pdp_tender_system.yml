@@ -1,4 +1,4 @@
-name: PDP Tender Scrape
+name: PDP Tender system
 
 on:
   workflow_dispatch:
