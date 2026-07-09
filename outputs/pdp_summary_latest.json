@@ -1,12 +1,10 @@
 {
-  "generatedAtUtc": "2026-07-09T10:28:57+00:00",
+  "generatedAtUtc": "2026-07-09T11:31:22+00:00",
   "sourceStats": {
-    "hezareh_tenders": 2160,
-    "hezareh_inquiries": 0,
-    "parsnamad_inquiries": 2999
+    "hezareh_tenders": 2980
   },
-  "totalRawRows": 5159,
-  "totalNormalizedRows": 3245,
+  "totalRawRows": 2980,
+  "totalNormalizedRows": 537,
   "tenders": 537,
-  "inquiries": 2708
+  "inquiries": 0
 }
