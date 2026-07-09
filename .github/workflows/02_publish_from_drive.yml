@@ -1,0 +1,61 @@
+name: 02 - PDP Publish From Drive
+
+on:
+  workflow_dispatch:
+    inputs:
+      analysis_doc_id:
+        description: 'Google Doc ID containing Scheduled analysis JSON. Leave empty to use sample.'
+        required: false
+        default: ''
+      use_sample:
+        description: 'Use bundled sample analysis instead of Drive. true/false'
+        required: true
+        default: 'false'
+  schedule:
+    # Prototype publish at 08:30 Tehran time. Adjust later.
+    - cron: '0 5 * * *'
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  publish:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Build site from Drive or sample
+        shell: bash
+        run: |
+          USE_SAMPLE="${{ github.event.inputs.use_sample || 'false' }}"
+          DOC_ID="${{ github.event.inputs.analysis_doc_id || vars.PDP_ANALYSIS_DOC_ID }}"
+          if [ "$USE_SAMPLE" = "true" ] || [ -z "$DOC_ID" ]; then
+            echo "Using sample analysis JSON"
+            python scripts/publish_from_drive.py --sample --out-dir public
+          else
+            echo "Fetching analysis from Google Doc ID: $DOC_ID"
+            python scripts/publish_from_drive.py --doc-id "$DOC_ID" --out-dir public
+          fi
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
