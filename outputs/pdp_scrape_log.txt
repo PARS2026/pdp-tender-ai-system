@@ -1,0 +1,78 @@
+[2026-07-09T08:30:33+00:00] START source=hezareh_tenders kind=tender
+[2026-07-09T08:30:33+00:00] GET https://www.hezarehinfo.net/tenders/-!/pfrom-1405-04-16/pto-1405-04-17/page-01 attempt 1/2
+[2026-07-09T08:30:36+00:00] HTTP 200, 180309 chars
+[2026-07-09T08:30:36+00:00] hezareh tender page 1: parsed=61
+[2026-07-09T08:30:36+00:00] hezareh tender page 1: in_range_or_no_date=59 total=59
+[2026-07-09T08:30:36+00:00] GET https://www.hezarehinfo.net/tenders/-!/pfrom-1405-04-16/pto-1405-04-17/page-02 attempt 1/2
+[2026-07-09T08:30:36+00:00] HTTP 200, 179512 chars
+[2026-07-09T08:30:37+00:00] hezareh tender page 2: parsed=61
+[2026-07-09T08:30:37+00:00] hezareh tender page 2: in_range_or_no_date=61 total=120
+[2026-07-09T08:30:37+00:00] GET https://www.hezarehinfo.net/tenders/-!/pfrom-1405-04-16/pto-1405-04-17/page-03 attempt 1/2
+[2026-07-09T08:30:37+00:00] HTTP 200, 180000 chars
+[2026-07-09T08:30:37+00:00] hezareh tender page 3: parsed=61
+[2026-07-09T08:30:37+00:00] hezareh tender page 3: in_range_or_no_date=61 total=181
+[2026-07-09T08:30:37+00:00] GET https://www.hezarehinfo.net/tenders/-!/pfrom-1405-04-16/pto-1405-04-17/page-04 attempt 1/2
+[2026-07-09T08:30:38+00:00] HTTP 200, 179876 chars
+[2026-07-09T08:30:38+00:00] hezareh tender page 4: parsed=61
+[2026-07-09T08:30:38+00:00] hezareh tender page 4: in_range_or_no_date=61 total=242
+[2026-07-09T08:30:38+00:00] GET https://www.hezarehinfo.net/tenders/-!/pfrom-1405-04-16/pto-1405-04-17/page-05 attempt 1/2
+[2026-07-09T08:30:39+00:00] HTTP 200, 179986 chars
+[2026-07-09T08:30:39+00:00] hezareh tender page 5: parsed=61
+[2026-07-09T08:30:39+00:00] hezareh tender page 5: in_range_or_no_date=61 total=303
+[2026-07-09T08:30:39+00:00] DONE source=hezareh_tenders rows=303
+[2026-07-09T08:30:39+00:00] START source=hezareh_inquiries kind=inquiry
+[2026-07-09T08:30:39+00:00] GET https://www.hezarehinfo.net/inquiries/-!/pfrom-1405-04-16/pto-1405-04-17/page-01 attempt 1/2
+[2026-07-09T08:30:41+00:00] HTTP 200, 2868 chars
+[2026-07-09T08:30:41+00:00] hezareh inquiry page 1: parsed=0
+[2026-07-09T08:30:41+00:00] GET https://www.hezarehinfo.net/inquiries/-!/pfrom-1405-04-16/pto-1405-04-17/page-02 attempt 1/2
+[2026-07-09T08:30:41+00:00] HTTP 200, 2868 chars
+[2026-07-09T08:30:41+00:00] hezareh inquiry page 2: parsed=0
+[2026-07-09T08:30:41+00:00] GET https://www.hezarehinfo.net/inquiries/-!/pfrom-1405-04-16/pto-1405-04-17/page-03 attempt 1/2
+[2026-07-09T08:30:42+00:00] HTTP 200, 2868 chars
+[2026-07-09T08:30:42+00:00] hezareh inquiry page 3: parsed=0
+[2026-07-09T08:30:42+00:00] DONE source=hezareh_inquiries rows=0
+[2026-07-09T08:30:42+00:00] START source=parsnamad_tenders kind=tender
+[2026-07-09T08:30:42+00:00] GET https://www.parsnamaddata.com/tenders/page/1 attempt 1/2
+[2026-07-09T08:30:44+00:00] HTTP 200, 791254 chars
+[2026-07-09T08:30:44+00:00] parsnamad tender page 1: parsed=337
+[2026-07-09T08:30:44+00:00] parsnamad tender page 1: in_range=0 total=0
+[2026-07-09T08:30:44+00:00] GET https://www.parsnamaddata.com/tenders/page/2 attempt 1/2
+[2026-07-09T08:30:45+00:00] HTTP 200, 787114 chars
+[2026-07-09T08:30:45+00:00] parsnamad tender page 2: parsed=337
+[2026-07-09T08:30:45+00:00] parsnamad tender page 2: in_range=0 total=0
+[2026-07-09T08:30:45+00:00] GET https://www.parsnamaddata.com/tenders/page/3 attempt 1/2
+[2026-07-09T08:30:46+00:00] HTTP 200, 786651 chars
+[2026-07-09T08:30:46+00:00] parsnamad tender page 3: parsed=337
+[2026-07-09T08:30:46+00:00] parsnamad tender page 3: in_range=0 total=0
+[2026-07-09T08:30:46+00:00] GET https://www.parsnamaddata.com/tenders/page/4 attempt 1/2
+[2026-07-09T08:30:47+00:00] HTTP 200, 780205 chars
+[2026-07-09T08:30:47+00:00] parsnamad tender page 4: parsed=337
+[2026-07-09T08:30:47+00:00] parsnamad tender page 4: in_range=0 total=0
+[2026-07-09T08:30:47+00:00] GET https://www.parsnamaddata.com/tenders/page/5 attempt 1/2
+[2026-07-09T08:30:47+00:00] HTTP 200, 781311 chars
+[2026-07-09T08:30:48+00:00] parsnamad tender page 5: parsed=337
+[2026-07-09T08:30:48+00:00] parsnamad tender page 5: in_range=0 total=0
+[2026-07-09T08:30:48+00:00] DONE source=parsnamad_tenders rows=0
+[2026-07-09T08:30:48+00:00] START source=parsnamad_inquiries kind=inquiry
+[2026-07-09T08:30:48+00:00] GET https://www.parsnamaddata.com/inquiries/page/1 attempt 1/2
+[2026-07-09T08:30:53+00:00] HTTP 200, 571605 chars
+[2026-07-09T08:30:53+00:00] parsnamad inquiry page 1: parsed=54
+[2026-07-09T08:30:53+00:00] parsnamad inquiry page 1: in_range=0 total=0
+[2026-07-09T08:30:53+00:00] GET https://www.parsnamaddata.com/inquiries/page/2 attempt 1/2
+[2026-07-09T08:30:57+00:00] HTTP 200, 567469 chars
+[2026-07-09T08:30:58+00:00] parsnamad inquiry page 2: parsed=54
+[2026-07-09T08:30:58+00:00] parsnamad inquiry page 2: in_range=0 total=0
+[2026-07-09T08:30:58+00:00] GET https://www.parsnamaddata.com/inquiries/page/3 attempt 1/2
+[2026-07-09T08:31:02+00:00] HTTP 200, 567006 chars
+[2026-07-09T08:31:02+00:00] parsnamad inquiry page 3: parsed=54
+[2026-07-09T08:31:02+00:00] parsnamad inquiry page 3: in_range=0 total=0
+[2026-07-09T08:31:02+00:00] GET https://www.parsnamaddata.com/inquiries/page/4 attempt 1/2
+[2026-07-09T08:31:06+00:00] HTTP 200, 560560 chars
+[2026-07-09T08:31:06+00:00] parsnamad inquiry page 4: parsed=54
+[2026-07-09T08:31:06+00:00] parsnamad inquiry page 4: in_range=0 total=0
+[2026-07-09T08:31:06+00:00] GET https://www.parsnamaddata.com/inquiries/page/5 attempt 1/2
+[2026-07-09T08:31:10+00:00] HTTP 200, 561666 chars
+[2026-07-09T08:31:11+00:00] parsnamad inquiry page 5: parsed=54
+[2026-07-09T08:31:11+00:00] parsnamad inquiry page 5: in_range=0 total=0
+[2026-07-09T08:31:11+00:00] DONE source=parsnamad_inquiries rows=0
+[2026-07-09T08:31:13+00:00] SUMMARY {"generatedAtUtc": "2026-07-09T08:31:13+00:00", "sourceStats": {"hezareh_tenders": 303, "hezareh_inquiries": 0, "parsnamad_tenders": 0, "parsnamad_inquiries": 0}, "totalRawRows": 303, "totalNormalizedRows": 137, "tenders": 137, "inquiries": 0}

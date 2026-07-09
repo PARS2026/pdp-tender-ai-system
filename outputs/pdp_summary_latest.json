@@ -1,0 +1,13 @@
+{
+  "generatedAtUtc": "2026-07-09T08:31:13+00:00",
+  "sourceStats": {
+    "hezareh_tenders": 303,
+    "hezareh_inquiries": 0,
+    "parsnamad_tenders": 0,
+    "parsnamad_inquiries": 0
+  },
+  "totalRawRows": 303,
+  "totalNormalizedRows": 137,
+  "tenders": 137,
+  "inquiries": 0
+}
